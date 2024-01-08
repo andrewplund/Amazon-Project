@@ -31,7 +31,7 @@ export function addToCart(productId) {
     cart.push({
       productId: productId,
       quantity: 1,
-      deliveryOptionId: '1'
+      // deliveryOptionId: '1'
     });
   }
 
@@ -52,7 +52,7 @@ export function removeFromCart(productId) {
   saveToStorage();
 }
 
-export function updateDelivaeryOption(productId, deliveryOptionId) {
+export function updateDeliveryOption(productId, deliveryOptionId) {
   let matchingItem;
 
   cart.forEach((cartItem) => {
@@ -65,3 +65,4 @@ export function updateDelivaeryOption(productId, deliveryOptionId) {
 
   saveToStorage();
 }
+
